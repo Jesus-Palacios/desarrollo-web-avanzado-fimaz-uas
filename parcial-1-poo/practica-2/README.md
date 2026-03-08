@@ -11,3 +11,4 @@ que devuelve "Administrador".
 ## Evidencia de ejecución
 Al ejecutar el programa se muestra el mensaje del constructor, el nombre y correo 
 del usuario, y el rol de administrador. 
+<img width="1366" height="725" alt="Captura de pantalla (3306)" src="https://github.com/user-attachments/assets/8ccaaf27-5358-4d1d-bd01-461b68769eca" />
