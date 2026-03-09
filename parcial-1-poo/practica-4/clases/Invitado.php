@@ -10,7 +10,7 @@
             $this->empresa = $empresa;
         } 
 
-        public function getMatricula(){
+        public function getEmpresa(){
             return $this->empresa;
         }
         //La función getRol devuelve "Invitado"
