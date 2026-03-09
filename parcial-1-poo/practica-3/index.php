@@ -3,7 +3,6 @@
     require_once 'clases/Alumno.php';
     
     //Instancia de la clase
-    
     $ObjAdmin01 = new Admin();
     
     //Asignamos el valor de nombre y lo imprimimos
@@ -14,7 +13,7 @@
         $ObjAdmin01->setCorreo("Jesuspalacios");
         echo "Correo: " . $ObjAdmin01->getCorreo() . "<br>";
     } catch (Exception $e) {
-        echo "Error en el correo: " . $e->getMessage() . "<br>";
+        echo "Error: " . $e->getMessage() . "<br>";
     }
     //Imprimimos el rol
     echo "Rol: " . $ObjAdmin01->getRol() . "<p>";
@@ -33,7 +32,7 @@
         $ObjAlumno01->setCorreo("jesuszata@gmail.com");
         echo "Correo: " . $ObjAlumno01->getCorreo() . "<br>";
     } catch (Exception $e) {
-        echo "Error en el correo: " . $e->getMessage() . "<br>";
+        echo "Error: " . $e->getMessage() . "<br>";
     }
     echo "Rol: " . $ObjAlumno01->getRol() . "<br>";
 ?>
