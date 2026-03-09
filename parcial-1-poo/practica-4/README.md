@@ -13,7 +13,7 @@ Construir un mini-sistema POO en PHP que simula el examen parcial, integrando:
 • Manejo de excepciones con try/catch
 
 • Salida en HTML (tabla)
-
+## Requisitos (PHP 8, XAMPP)
 ## Ruta de ejecución en navegador
 Clonar mi reposoritorio, moverlo a dentro de la carpeta del xampp, ponerlo en htdocs y iniciar el
 xampp, después colocar en el navegador este link:
