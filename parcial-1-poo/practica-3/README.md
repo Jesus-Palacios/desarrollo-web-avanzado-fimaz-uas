@@ -12,3 +12,4 @@ que asignar y mostrar.
 En la clase Usuario se valida que el correo tenga un formato correcto. Si el correo no es 
 válido, se lanza una excepción con el mensaje "Correo inválido". Este error se maneja en 
 index.php usando try/catch.
+<img width="1366" height="725" alt="Captura de pantalla (3310)" src="https://github.com/user-attachments/assets/01f63666-d2ad-4ce1-bd1d-d7df336a88f2" />
