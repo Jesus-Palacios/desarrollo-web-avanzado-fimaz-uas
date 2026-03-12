@@ -3,7 +3,7 @@
 
     class Admin extends Usuario {
         public function getRol(){
-            return "Admin";
+            return "Administrador";
         }
     }
 ?>
