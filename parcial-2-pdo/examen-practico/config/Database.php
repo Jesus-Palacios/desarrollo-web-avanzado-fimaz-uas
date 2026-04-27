@@ -1,4 +1,9 @@
 <?php
+//Jesús Antonio Palacios Navidad   LISI 3-1
+namespace Config;
+use PDO;
+use PDOException;
+
 class Database {
     private $host = "localhost";
     private $dbname = "phppdobd";
