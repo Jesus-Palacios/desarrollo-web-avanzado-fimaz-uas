@@ -1,4 +1,6 @@
 <?php 
+//Jesús Antonio Palacios Navidad   LISI 3-1
+namespace Models;
     class Producto {
         private $id;
         private $nombre;
