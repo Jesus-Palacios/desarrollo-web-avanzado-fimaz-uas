@@ -1,7 +1,11 @@
 <?php
-    require_once __DIR__ . '/../config/Database.php';
-    require_once __DIR__ . '/../models/Producto.php';
+//Jesús Antonio Palacios Navidad   LISI 3-1
+namespace Controllers;
+use Config\Database;
+use Models\Producto;
 
+use PDO;
+use PDOException;
     class ProductoController {
         private $connection;
 
@@ -11,19 +15,23 @@
         }
 
         public function crear(Producto $producto) {
-            $sql = "INSERT INTO productos (nombre, descripcion, existencia, precio)
-                    VALUES  (:nombre, :descripcion, :existencia, :precio)";
-            $stmt = $this->connection->prepare($sql);
+            try {
+                $sql = "INSERT INTO productos (nombre, descripcion, existencia, precio)
+                        VALUES  (:nombre, :descripcion, :existencia, :precio)";
+                $stmt = $this->connection->prepare($sql);
 
-            $stmt->bindValue(':nombre', $producto->getNombre());
-            $stmt->bindValue(':descripcion', $producto->getDescripcion());
-            $stmt->bindValue(':existencia', $producto->getExistencia(), PDO::PARAM_INT);
-            $stmt->bindValue(':precio', $producto->getPrecio());
+                $stmt->bindValue(':nombre', $producto->getNombre());
+                $stmt->bindValue(':descripcion', $producto->getDescripcion());
+                $stmt->bindValue(':existencia', $producto->getExistencia(), PDO::PARAM_INT);
+                $stmt->bindValue(':precio', $producto->getPrecio());
 
-            return $stmt->execute();
+                return $stmt->execute();
+            } catch (PDOException $e){
+                return false;
+            }
         }
 
-        public function Listar() {
+        public function listar() {
             $sql = "SELECT * FROM productos ORDER BY id DESC";
             $stmt = $this->connection->prepare($sql);
             $stmt->execute();
@@ -41,27 +49,35 @@
         }
 
         public function actualizar(Producto $producto) {
-            $sql = "UPDATE productos
-                    SET nombre = :nombre, descripcion = :descripcion, existencia = :existencia,
-                    precio = :precio
-                    WHERE id = :id";
-            $stmt = $this->connection->prepare($sql);
+            try {
+                $sql = "UPDATE productos
+                        SET nombre = :nombre, descripcion = :descripcion, existencia = :existencia,
+                        precio = :precio
+                        WHERE id = :id";
+                $stmt = $this->connection->prepare($sql);
 
-            $stmt->bindValue(':id', $producto->getId(), PDO::PARAM_INT);
-            $stmt->bindValue(':nombre', $producto->getNombre());
-            $stmt->bindValue(':descripcion', $producto->getDescripcion());
-            $stmt->bindValue(':existencia', $producto->getExistencia(), PDO::PARAM_INT);
-            $stmt->bindValue(':precio', $producto->getPrecio());
+                $stmt->bindValue(':id', $producto->getId(), PDO::PARAM_INT);
+                $stmt->bindValue(':nombre', $producto->getNombre());
+                $stmt->bindValue(':descripcion', $producto->getDescripcion());
+                $stmt->bindValue(':existencia', $producto->getExistencia(), PDO::PARAM_INT);
+                $stmt->bindValue(':precio', $producto->getPrecio());
 
-            return $stmt->execute();
+                return $stmt->execute();
+            } catch (PDOException $e){
+                return false;
+            }
         }
 
         public function eliminar($id){
-            $sql = "DELETE FROM productos WHERE id = :id";
-            $stmt = $this->connection->prepare($sql);
-            $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+            try {
+                $sql = "DELETE FROM productos WHERE id = :id";
+                $stmt = $this->connection->prepare($sql);
+                $stmt->bindValue(':id', $id, PDO::PARAM_INT);
 
-            return $stmt->execute();
+                return $stmt->execute();
+            } catch (PDOException $e) {
+                return false;
+            }
         }
 
         public function buscar($termino) {
