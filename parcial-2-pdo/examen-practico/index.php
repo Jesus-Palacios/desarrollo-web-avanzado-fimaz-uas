@@ -1,5 +1,13 @@
 <?php
-require_once 'controllers/ProductoController.php';
+//Jesús Antonio Palacios Navidad   LISI 3-1
+use Controllers\ProductoController;
+use Models\Producto;
+
+//Autoload
+spl_autoload_register(function ($clase){
+    $ruta = __DIR__ . '/' . str_replace('\\', '/' , $clase) . '.php';
+    require $ruta;
+});
 
 $controller = new ProductoController();
 
