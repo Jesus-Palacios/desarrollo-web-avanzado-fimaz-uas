@@ -1,4 +1,3 @@
-    
       </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
@@ -23,6 +22,7 @@
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">CONTÁCTO</h6>
+                <p>
                     <!--Estan pendiente de poner iconos-->
                     <i class="fa-solid fa-phone"> +526691632645</i>
                     <i class="fa-solid fa-envelope" >jesuspalaciosna07@gmail.com</i> 
