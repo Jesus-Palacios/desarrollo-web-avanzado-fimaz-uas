@@ -6,10 +6,10 @@
     //Capturamos los registros de la tabla en "filas".
     $rows = $objTorneosController->readTorneos();
 ?>
-
+<div class="mx-auto p-5">
     <div class="card text-center">
         <div class="card-header">
-            LISTADOS DE TORNEOS
+            <span class="fa-solid fa-trophy"> LISTADOS DE TORNEOS </span>
         </div>
         <div class="card-body">
             <table class="table table-hover table-bordered">
@@ -29,14 +29,13 @@
                                 <th><?= $row['nombreTorneo'] ?></th>
                                 <th><?= $row['organizador'] ?></th>
                                 <th>
-                                    ACCIONES: EDITAR, ELIMINAR.
-                                    <a href="readOneTorneo.php?id=<?= $row['id'] ?>" class="btn btn-primary">Consultar</a>
-                                    <a href="updateTorneo.php?id=<?= $row['id'] ?>" class="btn btn-success">Editar</a>
+                                    <a href="readOneTorneo.php?id=<?= $row['id'] ?>" class="btn btn-primary"><span class="fa-solid fa-list-check"></span></a>
+                                    <a href="updateTorneo.php?id=<?= $row['id'] ?>" class="btn btn-success"><span class="fa-solid fa-pen-to-square"></span></a>
                                     <!--Eliminar registro utilizando Ventana Modal.-->
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" 
                                     data-bs-target="#idModal<?= $row['id'] ?>">
-                                    Eliminar
+                                    <span class="fa-solid fa-trash"></span>
                                     </button>
 
                                     <!-- Modal -->
@@ -75,6 +74,7 @@
     <div class="mx-auto p-2">
         <a href="admin.php" class="btn btn-primary">REGRESAR</a>
     </div>
+</div>
 <?php
     require_once("../admin/template/footer.php");
 ?>
