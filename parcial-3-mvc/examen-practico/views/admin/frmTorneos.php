@@ -4,7 +4,7 @@
 <div class="mx-auto p-5">
     <div class="card">
         <div class="card-header">
-            <span class="fa-solid fa-trophy"> CAPTURAR LA INFORMACIÓN DEL TORNEO.</span>  
+            <span class="fa-solid fa-trophy"></span> CAPTURAR LA INFORMACIÓN DEL TORNEO.
         </div>
         <div class="card-body">
             <form action="torneosInsert.php" method="post">
@@ -24,7 +24,7 @@
                     <textarea name="txtPatrocinador" id="patrocinador" cols="30" rows="2"
                     class="form-control"></textarea>
                     <span id="patrocinador" class="form-text">
-                        Atención: se puede separa con "," si hay más de un patrocinador.
+                        Atención: se puede separar con "," si hay más de un patrocinador.
                     </span>
                 </div>
                 <div class="row">
@@ -69,10 +69,10 @@
                         <input type="text" name="txtOtroPremio" id="otroPremio" class="form-control">
                     </div>
                 </div>
-                <!--Usuario y Contraseña para el Organizador del Torne -->
+                <!--Usuario y Contraseña para el Organizador del Torneo-->
                 <div class="row">
                     <div class="col mb-3">
-                        <label for="usuarop" class="form-label">USUARIO</label>
+                        <label for="usuario" class="form-label">USUARIO</label>
                         <input type="text" name="txtUsuario" id="usuario" class="form-control">
                     </div>
                     <div class="col mb-3">

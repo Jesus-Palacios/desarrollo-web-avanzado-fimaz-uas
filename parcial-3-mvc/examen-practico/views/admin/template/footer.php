@@ -23,17 +23,18 @@
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">CONTÁCTO</h6>
                 <p>
-                    <!--Estan pendiente de poner iconos-->
-                    <i class="fa-solid fa-phone"> +526691632645</i>
-                    <i class="fa-solid fa-envelope" >jesuspalaciosna07@gmail.com</i> 
-                    <i class="fa-solid fa-school"> Facultad de Informática Mazatlán, Universidad Autónoma de Sinaloa.</i> 
+                    <i class="fa-solid fa-phone"></i> +52 6691632645 <br>
+                    <i class="fa-solid fa-envelope"></i> jesuspalaciosna07@gmail.com <br>
+                    <i class="fa-solid fa-school"></i> Facultad de Informática Mazatlán, Universidad Autónoma de Sinaloa.
                 </p>
             </div>
           </div>
         </div>
       </section>
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.25);">
-        © Clase Desarrollo Web II. MVC. PHP. PDO. MySQL. BOOTSTRAP.
+        © Clase Desarrollo Web II. MVC. PHP. PDO. MySQL. BOOTSTRAP. <br>
+        Alumno: Jesús Antonio Palacios Navidad. <br>
+        GRUPO: LISI 3-1.
       </div>
 
   </footer>

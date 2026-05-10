@@ -10,7 +10,7 @@
     <div class="mx-auto p-5">
         <div class="card">
             <div class="card-header">
-                INFORMACIÓN DEL TORNEO.
+                <span class="fa-brands fa-readme"></span> INFORMACIÓN DEL TORNEO.
             </div>
             <div class="card-body">
                 <form action="torneosInsert.php" method="post">

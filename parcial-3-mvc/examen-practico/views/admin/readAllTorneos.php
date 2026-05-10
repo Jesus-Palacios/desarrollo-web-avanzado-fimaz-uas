@@ -9,7 +9,7 @@
 <div class="mx-auto p-5">
     <div class="card text-center">
         <div class="card-header">
-            <span class="fa-solid fa-trophy"> LISTADOS DE TORNEOS </span>
+            <span class="fa-solid fa-trophy"></span> LISTADOS DE TORNEOS
         </div>
         <div class="card-body">
             <table class="table table-hover table-bordered">
