@@ -1,4 +1,6 @@
 <?php
+    //Jesús Antonio Palacios Navidad.     LISI 3-1
+    
     require_once("../admin/template/header.php");
 ?>
 <div class="mx-auto p-5">

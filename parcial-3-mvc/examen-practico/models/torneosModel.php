@@ -1,4 +1,6 @@
 <?php
+    //Jesús Antonio Palacios Navidad.     LISI 3-1
+
     require_once("../../config/DataBase.php");
 
     class torneosModel {
@@ -20,7 +22,7 @@
             //Encriptar Contraseña asignada al organizador del torneo.
             $contrasena = $this->passwordEncrypt($contrasena);
             //Iniciamos declarando el statement y preparamos la consulta
-            $statement = $this->PDO->prepare("INSERT INTO torneos VALUES(null, :nombreTorneo,
+            $statement = $this->PDO->prepare("INSERT INTO torneos VALUES (null, :nombreTorneo,
             :organizador, :patrocinadores, :sede, :categoria, :premio1, :premio2, :premio3,
             :otroPremio, :usuario, :contrasena)");
             //Asociamos los valores colocados como placeholder en el query mediante el

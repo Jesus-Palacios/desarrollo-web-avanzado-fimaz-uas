@@ -1,4 +1,6 @@
 <?php
+    //Jesús Antonio Palacios Navidad.     LISI 3-1
+    
     //Crear una clase para conexión a base de datos mediante PDO/
 
     class Database{

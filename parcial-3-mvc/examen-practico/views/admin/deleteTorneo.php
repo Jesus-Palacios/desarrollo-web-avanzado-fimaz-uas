@@ -1,5 +1,6 @@
 <?php
-
+    //Jesús Antonio Palacios Navidad.     LISI 3-1
+    
     require_once("../../controllers/torneosController.php");
     $objTorneosController = new torneosController();
     //Obtener el id desde el botón que mandará eliminar el registro.

@@ -1,4 +1,6 @@
 <?php
+    //Jesús Antonio Palacios Navidad.     LISI 3-1
+
     require_once("../../models/torneosModel.php");
     
     class torneosController{
