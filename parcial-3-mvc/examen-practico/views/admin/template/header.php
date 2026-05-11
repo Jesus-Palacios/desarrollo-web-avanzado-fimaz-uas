@@ -11,4 +11,7 @@
     <script src="https://kit.fontawesome.com/107c515f18.js" crossorigin="anonymous"></script>
   </head>
   <body>
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.25);">
+        Examen desarrolladdo por Jesús Antonio Palacios Navidad.
+      </div>
     <div class="container">
