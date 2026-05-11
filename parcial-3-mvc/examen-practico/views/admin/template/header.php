@@ -12,6 +12,6 @@
   </head>
   <body>
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.25);">
-        Examen desarrolladdo por Jesús Antonio Palacios Navidad.
+        Examen desarrollado por Jesús Antonio Palacios Navidad.
       </div>
     <div class="container">
